@@ -21,6 +21,13 @@
 			  });
 			});
 		</script>
+		<script>
+			$(document).ready(function(){
+			  $(".flip3").click(function(){
+				$(".panel3").slideToggle("slow");
+			  });
+			});
+		</script>
 </head>
 <body>
 		<div id="content">
@@ -51,7 +58,7 @@
 				<div class="login">
 					<h4>Search</h4>
 						<form name="log" method="get" action="" onsubmit="return validateForm();">
-							<p><input type="text" name="username" value="" placeholder="Searching"></p>
+							<input type="text" name="username" size="16" value="" placeholder="Searching">
 							<p class="submit"><input type="submit" name="commit" value="Search"></p>
 						</form>
 				</div>
@@ -91,6 +98,20 @@
 
 					"Pemilu ke depan itu, coba gunakan pemilih aktif. Orang yang dari awal tidak mau milih, dia tidak akan memilih. Jadi negara mencetak kertas, untuk mereka yang tidak mau memilih," tambah Yanuar.</p>
 				<div class="flip2">Learn More</div>
+				<p>Pemilu 2014 telah selesai digelar. Salah satu evaluasinya adalah masalah daftar pemilih dan pencetakan kertas suara yang berlebihan.</p>
+
+					<p>License Officer pasangan capres-cawapres Prabowo-Hatta, Yanuar Arief menilai permasalahan daftar pemilih tak pernah lepas dari pemilu. Padahal menurut Yanuar, untuk mengkroscek daftar pemilih memerlukan dana yang tidak sedikit.</p>
+
+					<p>"Toh pada pileg dan pilpres ini menjadi masalah. Bahkan di pilpres mengemuka begitu dahsyat soal DPKTB. Jumlah pasti jumlah pemilih yang terdaftar selalu tidak valid," kata Yanuar dalam diskusi di Komisi Pemilihan Umum (KPU), Jalan Imam Bonjol, Jakarta Pusat, Kamis (9/10/2014).</p>
+
+					<p class="panel3">Yanuar juga menyayangkan penyediaan dan pencetakan kertas suara yang begitu besar. Padahal menurut Yanuar, angka golput atau pemilih yang tidak menggunakan hak suaranya cukup besar pada Pemilu 2014 kemarin. Hal itu pun dianggapnya sebagai pemborosan anggaran penyelenggaraan pemilu.
+
+					"Terkait kebutuhan kertas suara. Partisipasi kemarin sekitar 70 persen. Kalau dicetak 100 persen, Rp 900 milar. Kalau 30 persen tidak digunakan, Rp 270 miliar mubazir," ucap dia.
+
+					Untuk itu, Yanuar meminta kepada KPU sebagai penyelenggara pemilu untuk lebih teliti dalam menentukan daftar pemilih sehingga dapat mengetahui kebutuhan kertas suara bagi para pemilih sehingga nantinya tidak terjadi pemborosan anggaran.
+
+					"Pemilu ke depan itu, coba gunakan pemilih aktif. Orang yang dari awal tidak mau milih, dia tidak akan memilih. Jadi negara mencetak kertas, untuk mereka yang tidak mau memilih," tambah Yanuar.</p>
+				<div class="flip3">Learn More</div>
 				</article>
 				
 				<!-- isi penjelasan halaman -->
@@ -100,8 +121,8 @@
 				<div class="login">
 					<h4>Login</h4>
 						<form name="log" method="post" action="" onsubmit="return validateForm();">
-							<p><input type="text" name="username" value="" placeholder="Username"></p>
-							<p><input type="password" name="password" value="" placeholder="Password"></p>
+							<input type="text" name="username" size="16" value="" placeholder="Username">
+							<p><input type="password" name="password" size="16" value="" placeholder="Password"></p>
 							<p class="submit"><input type="submit" name="commit" value="Login"></p>
 						</form>
 				</div>

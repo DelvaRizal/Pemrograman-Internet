@@ -11,9 +11,10 @@ body {
 }
 	
 .flip1{
+	color:white;
 	padding:5px;
 	text-align:center;
-	background-color:red;
+	background-color:#be0726;
 }
 
 .panel2{
@@ -22,9 +23,22 @@ body {
 }
 	
 .flip2{
+	color:white;
 	padding:5px;
 	text-align:center;
-	background-color:red;
+	background-color:#be0726;
+}
+
+.panel3{
+	display:none;
+	text-align:justify;	
+}
+	
+.flip3{
+	color:white;
+	padding:5px;
+	text-align:center;
+	background-color:#be0726;
 }
 
 .panelpartai1{
@@ -229,7 +243,7 @@ footer {
 	float: both;
 	border-radius: 5px;
 	text-align: center;
-	color: yellow;
+	color: white;
 }
 
 .register {

@@ -47,7 +47,7 @@
 				<div class="login">
 					<h4>Search</h4>
 						<form name="log" method="get" action="" onsubmit="return validateForm();">
-							<p><input type="text" name="username" value="" placeholder="Searching"></p>
+							<p><input type="text" name="username" size="16" value="" placeholder="Searching"></p>
 							<p class="submit"><input type="submit" name="commit" value="Search"></p>
 						</form>
 				</div>
@@ -63,7 +63,15 @@
 							<td>Alamat <td>: <input id="text" type="text" name="alamat" value="" placeholder="Alamat" required><tr>
 							<td>Email <td>: <input id="email" type="email" name="email" value="" placeholder="Email" required><tr>
 							<td>Website <td>: <input id="id" type="text" name="website" value="" placeholder="Website" required><tr>
-							<td>Partai <td>: <input id="nama" type="text" name="partai" value="" placeholder="Partai" required><tr>
+							<td>Partai <td>: <select name="Partai">
+														  <option value="">Select...</option>
+														  <option value="1">Demokrat</option>
+														  <option value="2">GOLKAR</option>
+														  <option value="3">PDIP</option>
+														  <option value="4">Gerindra</option>
+														  <option value="5">PAN</option>
+														  <option value="6">PKS</option>
+														</select><tr>
 							<td>Daerah Pemilihan <td>: <select name="Daerah">
 														  <option value="">Select...</option>
 														  <option value="1">Semarang Tengah</option>
@@ -84,8 +92,8 @@
 				<div class="login">
 					<h4>Login</h4>
 						<form name="log" method="post" action="cek.php" onsubmit="return validateForm();">
-							<p><input type="text" name="username" value="" placeholder="Username"></p>
-							<p><input type="password" name="password" value="" placeholder="Password"></p>
+							<p><input type="text" name="username" size="16" value="" placeholder="Username"></p>
+							<p><input type="password" name="password" size="16" value="" placeholder="Password"></p>
 							<p class="submit"><input type="submit" name="commit" value="Login"></p>
 						</form>
 				</div>

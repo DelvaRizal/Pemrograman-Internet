@@ -3,7 +3,31 @@
 	<head>
 		<title>Pemilu Online</title>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="jquery-ui.css" /> 
 		<script src="java.js"></script>
+		<script src="jquery-1.9.1.js"></script> 
+		<script src="jquery-ui.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $(".flip1").click(function(){
+				$(".panel1").slideToggle("slow");
+			  });
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+			  $(".flip2").click(function(){
+				$(".panel2").slideToggle("slow");
+			  });
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+			  $(".flip3").click(function(){
+				$(".panel3").slideToggle("slow");
+			  });
+			});
+		</script>
 	</head>
 	
 	<body>
@@ -35,7 +59,7 @@
 				<div class="login">
 					<h4>Search</h4>
 						<form name="log" method="get" action="" onsubmit="return validateForm();">
-							<p><input type="text" name="username" value="" placeholder="Searching"></p>
+							<p><input type="text" name="username" size="16" value="" placeholder="Searching"></p>
 							<p class="submit"><input type="submit" name="commit" value="Search"></p>
 						</form>
 				</div>
@@ -46,15 +70,44 @@
 				<article class="isi">
 						<center><img src="image.jpg" /></center>
 						<table>
-						<td>Nama Lengkap <td>: Deny Septianto<tr>
-						<td>TTL <td>: kendal, 15-06-88<tr>
-						<td>Alamat <td>: Semarang<tr>
-						<td>Email <td>: dennys@gmail.com<tr>
-						<td>Website <td>: dennyseptiantocaleg.com<tr>
-						<td>Partai <td>: Demokrat<tr>
-						<td>Daerah Pemilihan <td>: Semarang Barat<tr>
-						<td>Visi Misi <td>: Visi misi menjadikan semarang yang bersih dari korupsi<tr>
+						<td width="120"><b>Nama Lengkap</b><td>: Deny Septianto<tr>
+						<td><b>TTL</b><td>: kendal, 15-06-88<tr>
+						<td><b>Alamat</b><td>: Semarang<tr>
+						<td><b>Email</b><td>: dennys@gmail.com<tr>
+						<td><b>Website</b><td>: dennyseptiantocaleg.com<tr>
+						<td><b>Partai</b><td>: Demokrat<tr>
+						<td><b>DAPIL</b><td>: Semarang Barat<tr>
+						<td><b>Visi Misi</b><td>: Visi misi menjadikan semarang yang bersih dari korupsi<tr>
+						<td><b>Artikel</b><td><p>JAKARTA, KOMPAS.com — Komisi Pemilihan Umum (KPU) menetapkan Partai Golkar mendapat 91 kursi DPR periode 2014-2019. Dari 91 kursi DPR tersebut, 
+					sebanyak 49 kursi diisi oleh wajah-wajah baru dan sisanya, 42, orang merupakan petahana. </p>
+					<p>Anggota petahana yang terpilih kembali dari Partai Golkar ialah 1. Meutya Hafid (Sumatera Utara I, 45.232 suara), 2. Anthon Sihombing (Sumatera Utara III, 66.601 suara), 3. HM Idris Laena (Riau II, 91.595 suara), 
+					4. Dodi Reza Alex Noerdin (Sumatera Selatan I, 203.246 suara), 5. Kahar Muzakir (Sumatera Selatan I, 49.025 suara), 6. Aziz Syamsuddin (Lampung II, 70.619 suara),
+					7. Azhar Romli (Bangka Belitung, 33.693 suara), 8. Fayakhun Andriadi (Jakarta II, 25.446 suara), 9. Tantowi Yahya (Jakarta III, 45.507 suara), 10. Popong Otje Djunjunan (Jawa Barat I, 26.090 suara).</p>
+
+					<p class="panel1">11. Agus Gumiwang Kartasasmita (Jawa Barat II, 102.469 suara), 12. Lili Asdjudiredja (Jawa Barat II, 44.285 suara), 13. Deding Ishaq (Jawa Barat III, 33.009 suara), 14. Dewi Asmara (Jawa Barat IV, 77.158 suara	), 
+					15. Airlangga Hartarto (Jawa Barat V, 113.939 suara), 16. Ade Komarudin (Jawa Barat VII, 167.732 suara), 17. Eldie Suwandie (Jawa Barat IX, 90.588 suara), 18. Agun Gunanjar Sudarsa (Jawa Barat X, 69.359 suara), 
+					19. Ferdiansyah (Jabar XI, 67.847 suara), 20. Nusron Wahid (Jawa Tengah II, 243.021 suara).
+
+					21. Firman Subagyo (Jawa Tengah III, 90.757 suara), 22. Bambang Soesatyo (Jawa Tengah VII, 57.235 suara), 23. Dito Ganindito (Jawa Tengah VIII, 49.137 suara), 24. Budi Supriyanto (Jawa Tengah X, 57.339 suara), 25. Hardisoesilo	
+					(Jawa Timur III, 34.000 suara), 26. SW Yudha (Jawa Timur IX, 46.022 suara), 27. Zainudin Amali (Jawa Timur XI, 122.167 suara), 28. Gde Sumarja Linggih (Bali, 141.168 suara), 29. Muhammad Lutfi (Nusa Tenggara Barat, 59.074 suara),
+					30. Melchias Markus Mekeng (Nusa Tenggara Timur I, 73.120 suara).
+
+					31. Setya Novanto (NTT I, 85.188), 32. Charles J Mesang (NTT II, 54.514 suara), 33. Zul Fadhli (Kalimantan Barat, 100.583 suara), 34. Ahmadi Noor Supit (Kalimantan Selatan I, 71.233 suara), 35. Mahyudin (Kalimantan Timur, 91.623 suara), 36. Aditya Anugrah Moha (Sulawesi Utara, 77.264 suara), 37. Mohammad Said (Sulawesi Tengah, 131.508 suara), 38. Syamsul Bachri (Sulawesi Selatan II, 66.519 suara), 39. Andi Rio Idris Padjalangi (Sulawesi Selatan II, 77.962 suara), 40. Markus Nari (Sulawesi Selatan III, 76.608 suara), 41. Roem Pono (Gorontalo, 117.831 suara), 42. Edison Betaubun (Maluku, 58.765 suara).</p>
+					<div class="flip1">Learn More</div><tr>
+						<td><b>Url</b> <td>: <a href="http://google.com">Link URL</a><tr>
 						</table>
+						<br /> <br />
+						<table>
+							<td>1. <td>Komentar pertama<tr>
+							<td>2. <td>Komentar kedua<tr>
+						</table>
+						<br /><br />
+						<form name="komentar" method="post" action="">
+							<table>
+							<td>Komentar <td><textarea name="visi" rows="10" cols="50"></textarea><tr>
+							</table>
+							<p class="submit" align="center"><input type="submit" name="Posting" value="Posting"> &nbsp&nbsp&nbsp&nbsp&nbsp <button type="reset" class="cancel">Cancel</button></p>
+						</form>
 				</article>
 				<!-- isi penjelasan halaman -->
 			</div>
@@ -63,8 +116,8 @@
 				<div class="login">
 					<h4>Login</h4>
 						<form name="log" method="post" action="cek.php" onsubmit="return validateForm();">
-							<p><input type="text" name="username" value="" placeholder="Username"></p>
-							<p><input type="password" name="password" value="" placeholder="Password"></p>
+							<p><input type="text" name="username" size="16" value="" placeholder="Username"></p>
+							<p><input type="password" name="password" size="16" value="" placeholder="Password"></p>
 							<p class="submit"><input type="submit" name="commit" value="Login"></p>
 						</form>
 				</div>
